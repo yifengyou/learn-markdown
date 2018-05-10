@@ -1,5 +1,328 @@
 # markdown 学习笔记
 
+- - - -
+>标题 总共有6级标题
+
+# 一级标题
+```
+# 一级标题
+
+或者
+
+一级标题
+===           \\两个等于就够了
+```
+
+## 二级标题
+```
+## 二级标题
+
+或者
+
+二级标题
+---            \\两个-就够了
+```
+
+### 三级标题
+`### 三级标题`
+
+#### 四级标题
+`#### 四级标题`
+
+##### 五级标题
+`##### 五级标题`
+
+###### 六级标题
+`###### 六级标题`
+
+---
+
+>普通文本
+
+abcdef
+```
+abcdef
+```
+---
+
+>文字强调
+
+**强调本文字**
+
+__强调本文字__
+```
+**强调本文字**
+
+或者
+
+__强调本文字__
+
+```
+
+
+---
+
+>文字中划线
+
+~~中划线本文字~~
+
+```
+~~中划线本文字~~
+```
+---
+
+>文字强调斜体
+
+***强调斜体本文字***
+
+___强调斜体本文字___
+```
+***强调斜体本文字***
+
+或者
+
+___强调斜体本文字___
+
+```
+
+--
+>链接
+
+[链接名字](http://github.com/yifengyou) <br />
+http://www.google.fr/ or <http://example.com/>
+
+```
+[链接名字](http://github.com/yifengyou) <br />
+http://www.google.fr/ or <http://example.com/>
+```
+---
+>表格
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+
+```
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+```
+---
+>代码与代码块
+
+如果你是程序员，对代码肯定足够的熟悉。一般使用两个 ` 或 两个 ``` 把代码包裹起来，包裹起来的文字会保持它原有的格式
+
+代码：使用 ` 包裹起来的代码，可以显示在行内，代码不会高亮
+
+代码块：使用 ``` 包裹起来的代码，另起一行显示，可以说明编程语言，可能会出现代码高亮
+
+```javascript
+    var specificLanguage_code =
+    {
+        "data": {
+            "lookedUpPlatform": 1,
+            "query": "Kasabian+Test+Transmission",
+            "lookedUpItem": {
+                "name": "Test Transmission",
+                "artist": "Kasabian",
+                "album": "Kasabian",
+                "picture": null,
+                "link": "http://open.spotify.com/track/5jhJur5n4fasblLSCOcrTp"
+            }
+        }
+    }
+```
+    `code...`
+或者
+    ```
+      code...
+    ```
+分别针对行、字间代码和段落间代码
+
+---
+>列表
+
+无序列表：用 - 或 * 都可以，`字符后有一个空格`
+
+有序列表：用 1.（数字后跟点）即可，`数字后有一个空格`
+
+- 列表项1
+- 列表项2
+- 列表项3
+
+```
+- 列表项1
+- 列表项2
+- 列表项3
+```
+
+* 列表项1
+* 列表项2
+* 列表项3
+
+```
+* 列表项1
+* 列表项2
+* 列表项3
+```
+
+1. 列表项1
+2. 列表项2
+3. 列表项3
+
+```
+1. 列表项1
+2. 列表项2
+3. 列表项3
+```
+
+层级列表在此基础上开头加tab即可
+
+
+1. 这是第一层
+  1. 这是第一层里面第一层
+  2. 这是第一层里面第二层
+  3. 第一层里面第三层
+2. 这是第二层
+  1. 这是第二层里面第一层
+  2. 这是第二层里面第二层
+3. 这是第三层
+  1. 这是第三层里面第一层
+  2. 这是第三层里面第二层
+    1. 这是第三层里面第二层的第一层
+        1. 这是第三层里面第二层的第一层的第一层
+            1. 这是第三层里面第二层的第一第一层
+              1. 这是第三层里面~
+                1. 这是第三层里面~~
+                    1. 这是第三层里面~~
+
+4. 这是第四层
+
+```
+1. 这是第一层
+  1. 这是第一层里面第一层
+  2. 这是第一层里面第二层
+  3. 第一层里面第三层
+2. 这是第二层
+  1. 这是第二层里面第一层
+  2. 这是第二层里面第二层
+3. 这是第三层
+  1. 这是第三层里面第一层
+  2. 这是第三层里面第二层
+    1. 这是第三层里面第二层的第一层
+        1. 这是第三层里面第二层的第一层的第一层
+            1. 这是第三层里面第二层的第一第一层
+              1. 这是第三层里面~
+                1. 这是第三层里面~~
+                    1. 这是第三层里面~~
+
+4. 这是第四层
+```
+---
+
+* Bullet list
+    * Nested bullet
+        * Sub-nested bullet etc
+* Bullet list item 2
+
+~~~
+ Markup : * Bullet list
+              * Nested bullet
+                  * Sub-nested bullet etc
+          * Bullet list item 2
+~~~
+
+1. A numbered list
+    1. A nested numbered list
+    2. Which is numbered
+2. Which is numbered
+
+~~~
+ Markup : 1. A numbered list
+              1. A nested numbered list
+              2. Which is numbered
+          2. Which is numbered
+~~~
+
+- [ ] An uncompleted task
+- [x] A completed task
+
+~~~
+ Markup : - [ ] An uncompleted task
+          - [x] A completed task
+~~~
+
+> Blockquote
+>> Nested blockquote
+
+    Markup :  > Blockquote
+              >> Nested Blockquote
+
+_Horizontal line :_
+- - - -
+
+    Markup :  - - - -
+
+_Image with alt :_
+
+![picture alt](http://www.brightlightpictures.com/assets/images/portfolio/thethaw_header.jpg "Title is optional")
+
+    Markup : ![picture alt](http://www.brightlightpictures.com/assets/images/portfolio/thethaw_header.jpg "Title is optional")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ------
 
 我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，**Cmd Markdown** 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：
@@ -179,8 +502,8 @@ Bob-->Alice: I am good thanks!
 
 再一次感谢您花费时间阅读这份欢迎稿，点击 <i class="icon-file"></i> (Ctrl+Alt+N) 开始撰写新的文稿吧！祝您在这里记录、阅读、分享愉快！
 
-作者 [@ghosert][3]     
-2016 年 07月 07日    
+作者 [@ghosert][3]
+2016 年 07月 07日
 
 [^LaTeX]: 支持 **LaTeX** 编辑显示支持，例如：$\sum_{i=1}^n a_i=0$， 访问 [MathJax][4] 参考更多使用方法。
 
