@@ -10,7 +10,7 @@
 
 Atom 是github专门为程序员推出的一个跨平台文本编辑器。具有简洁和直观的图形用户界面，并有很多有趣的特点：支持CSS，HTML，JavaScript等网页编程语言。它支持宏，自动完成分屏功能，集成了文件管理器。
 
-![atomwebsite](https://github.com/yifengyou/learn-markdown/blob/master/image/atomwebsite.png) 
+![atomwebsite](https://github.com/yifengyou/learn-markdown/blob/master/image/atomwebsite.png)
 
 2015年1月8日宣布开源。
 
@@ -28,13 +28,20 @@ Atom 是github专门为程序员推出的一个跨平台文本编辑器。具有
 
 # Atom常用插件
 
+* simplified-chinese-menu
+  - https://atom.io/packages/simplified-chinese-menu
 * markdown-image-paste
+  - <https://atom.io/packages/markdown-image-paste>
 * markdown-toc
+  - <https://atom.io/packages/markdown-toc>
 * markdown-writer
-  * <https://atom.io/packages/markdown-writer>
+  - <https://atom.io/packages/markdown-writer>
 * git-plus
+  - <https://atom.io/packages/git-plus>
 * git-control
+  - <https://atom.io/packages/git-control>
 * markdown-scroll-sync
+  - <https://atom.io/packages/markdown-scroll-sync>
 
 # 参考文章
   [Atom教程 w3cschool](https://www.w3cschool.cn/atom)
