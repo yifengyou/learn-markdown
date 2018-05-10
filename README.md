@@ -250,17 +250,19 @@ MD支持以比较简短的自动链接形式来处理网址和电子邮件信箱
 
 表格可能是MD中最不便利的标签了，几乎需要你手动的敲一遍表格，例子如下：
 
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+|First Header  | Second Header|
+|------------- | -------------|
+|Content Cell  | Content Cell|
+|Content Cell  | Content Cell|
 
+
+PS:上面是输出，下面是markdown语法
 
 ```
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+|First Header  | Second Header|
+|------------- | -------------|
+|Content Cell  | Content Cell|
+|Content Cell  | Content Cell|
 ```
 
 ---
