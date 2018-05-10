@@ -236,7 +236,7 @@ http://www.google.fr/ or <http://example.com/>
 http://www.google.fr/ or <http://example.com/>
 ```
 
-![demoimage](image\demoimage.png)
+![demoimage](https://github.com/yifengyou/markdown/raw/master/image/demoimage.png)
 ---
 >自动链接
 
