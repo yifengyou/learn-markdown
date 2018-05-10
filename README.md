@@ -197,7 +197,7 @@ alt和title即对应HTML中的alt和title属性（都可省略）：
 URL即图片的url地址，如果引用本仓库中的图片，直接使用相对路径就可了，如果引用其他github仓库中的图片要注意格式，即：仓库地址/raw/分支名/图片路径，如：
 
 ```
-https://github.com/yifengyou/learn-markdown/master/image/demoimage.png
+https://github.com/yifengyou/learn-markdown/blob/master/image/demoimage.png
 ```
 
 行内方式：
@@ -228,7 +228,7 @@ http://www.google.fr/ or <http://example.com/>
 http://www.google.fr/ or <http://example.com/>
 ```
 
-![demoimage](https://github.com/yifengyou/learn-markdown/master/image/demoimage.png)
+![demoimage](https://github.com/yifengyou/learn-markdown/blob/master/image/demoimage.png)
 
 
 ---
