@@ -10,6 +10,8 @@
 
 Atom 是github专门为程序员推出的一个跨平台文本编辑器。具有简洁和直观的图形用户界面，并有很多有趣的特点：支持CSS，HTML，JavaScript等网页编程语言。它支持宏，自动完成分屏功能，集成了文件管理器。
 
+![atomwebsite](https://github.com/yifengyou/learn-markdown/blob/master/image/atomwebsite.png) 
+
 2015年1月8日宣布开源。
 
 ### 优点
