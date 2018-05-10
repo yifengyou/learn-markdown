@@ -73,6 +73,14 @@ __强调本文字__
 
 >文字强调斜体
 
+强调分为粗体和斜体
+
+粗体 ：用两个**将文本包裹起来即可
+
+斜体 ：用两个*将文字包裹起来即可
+
+粗体斜体 ：用三个***将文字包裹起来即可
+
 ***强调斜体本文字***
 
 ___强调斜体本文字___
@@ -86,9 +94,35 @@ ___强调斜体本文字___
 ```
 
 --
->链接
+>图片与链接
 
-[链接名字](http://github.com/yifengyou) <br />
+插入链接与插入图片的语法很像，区别在一个!号
+
+插入图片时需要图片的地址，如果你是在网上写blog等，必须使用url；如果你在本地使用MD编辑器做记录，可以使用本地路径
+
+插入图片和链接的方式有两种：1.行内方式 2.关联方式
+
+行内方式：
+```
+// 插入图片
+![图片名称](图片url)
+
+// 插入链接
+[显示内容](链接地址)
+```
+
+关联方式：
+```
+// 插入图片
+![图片名称][关联名称]
+
+//插入链接
+![显示内容][关联名称]
+
+[关联名称]:url/本地路径
+```
+
+[yifengyou github地址](http://github.com/yifengyou) <br />
 http://www.google.fr/ or <http://example.com/>
 
 ```
@@ -96,12 +130,28 @@ http://www.google.fr/ or <http://example.com/>
 http://www.google.fr/ or <http://example.com/>
 ```
 ---
+>自动链接
+
+自动链接
+
+MD支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用方括号包起来， Markdown 就会自动把它转成链接。一般网址的链接文字就和链接地址一样，例如：
+
+<https://github.com/yifengyou/>
+
+```
+<https://github.com/yifengyou/>
+```
+
+---
 >表格
 
+表格可能是MD中最不便利的标签了，几乎需要你手动的敲一遍表格，例子如下：
+
 First Header  | Second Header
 ------------- | -------------
 Content Cell  | Content Cell
 Content Cell  | Content Cell
+
 
 ```
 First Header  | Second Header
@@ -109,6 +159,7 @@ First Header  | Second Header
 Content Cell  | Content Cell
 Content Cell  | Content Cell
 ```
+
 ---
 >代码与代码块
 
@@ -221,55 +272,58 @@ Content Cell  | Content Cell
 4. 这是第四层
 ```
 ---
+>分割线
 
-* Bullet list
-    * Nested bullet
-        * Sub-nested bullet etc
-* Bullet list item 2
+html中的<hr>大家熟悉吧
 
-~~~
- Markup : * Bullet list
-              * Nested bullet
-                  * Sub-nested bullet etc
-          * Bullet list item 2
-~~~
+在MD中使用 *** 即可
 
-1. A numbered list
-    1. A nested numbered list
-    2. Which is numbered
-2. Which is numbered
 
-~~~
- Markup : 1. A numbered list
-              1. A nested numbered list
-              2. Which is numbered
-          2. Which is numbered
-~~~
+
+---
+>转义
+
+转义
+
+在MD中，有一些符号是有特殊意义的，比如 # ，如果你直接输入“# 你好”，将会变成一级标题。这时候需要使用\来转义，可以在井号之前加入反斜杠，如\#，才能得到你想要的结果。
+
+MD支持以下这些特殊符号前面加上反斜杠来帮助插入普通的符号
+```
+\   反斜线
+`   反引号
+*   星号
+ _   底线
+{}  花括号
+[]  方括号
+()  括弧
+#   井字号
++   加号
+-   减号
+.   英文句点
+!   惊叹号
+```
+
+---
+>复选框
 
 - [ ] An uncompleted task
 - [x] A completed task
 
 ~~~
- Markup : - [ ] An uncompleted task
-          - [x] A completed task
+- [ ] An uncompleted task
+- [x] A completed task
 ~~~
+---
 
-> Blockquote
->> Nested blockquote
+>引用
 
-    Markup :  > Blockquote
-              >> Nested Blockquote
+引用也可以层叠
 
-_Horizontal line :_
-- - - -
-
-    Markup :  - - - -
-
-_Image with alt :_
-
-![picture alt](http://www.brightlightpictures.com/assets/images/portfolio/thethaw_header.jpg "Title is optional")
-
-    Markup : ![picture alt](http://www.brightlightpictures.com/assets/images/portfolio/thethaw_header.jpg "Title is optional")
+>这行引用显示
+```
+>这行引用显示
+```
+---
 
 
 
